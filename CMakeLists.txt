@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(basic VERSION 1.0.2 LANGUAGES CXX)
+project(basic VERSION 1.0.3 LANGUAGES CXX)
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 file(GLOB_RECURSE INCLUDE_FILES CONFIGURE_DEPENDS "include/basic/*.h")
@@ -14,7 +14,7 @@ target_include_directories(basic PUBLIC
 
 
 set(config_install_dir "lib/cmake/${PROJECT_NAME}")
-set(include_install_dir "include")
+set(include_install_dir "include/${PROJECT_NAME}")
 
 set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
