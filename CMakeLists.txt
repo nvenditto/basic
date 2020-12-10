@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(basic VERSION 1.0.0 LANGUAGES CXX)
+project(basic VERSION 1.0.1 LANGUAGES CXX)
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 file(GLOB_RECURSE INCLUDE_FILES CONFIGURE_DEPENDS "include/basic/*.h")
